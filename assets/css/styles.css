@@ -139,10 +139,3 @@ img {
         overflow: hidden;
     }
 }
-
-@media (min-height: 1366px) {
-    .section-container {
-        margin-top: 5%;
-        justify-content: flex-start;
-    }
-}
