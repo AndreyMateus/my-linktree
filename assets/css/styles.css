@@ -56,6 +56,7 @@ body {
 }
 
 .link-tree a {
+    width: 314.125px;
     display: block;
     text-decoration: none;
     background-color: #EEEEEE;
@@ -66,9 +67,27 @@ body {
     transition: all 300ms ease-in-out;
 }
 
+p,
+img {
+    transition: all 300ms ease-in-out;
+}
+
+p {
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+p:hover {
+    box-shadow: 0 0 15px 10px #0d3098;
+    border-radius: 10px;
+}
+
 .link-tree a:hover {
-    box-shadow: 0 0 10px #0d3098;
-    background-color: #0d3098dc;
+    box-shadow: 0 0 15px #0d3098;
+    background-color: #0d309896;
     color: #fff;
 }
 
@@ -117,6 +136,13 @@ img {
 
 @media (min-height: 857px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
+    }
+}
+
+@media (min-height: 1366px) {
+    .section-container {
+        margin-top: 5%;
+        justify-content: flex-start;
     }
 }
